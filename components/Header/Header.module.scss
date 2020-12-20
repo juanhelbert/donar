@@ -3,7 +3,7 @@
   width: 100%;
   z-index: 9;
   display: flex;
-  padding: 8px 0;
+  padding: 12px 0;
   position: sticky;
   background-color: white;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -17,8 +17,52 @@
       display: flex;
 
       li {
-        margin-left: 16px;
+        margin-left: 20px;
       }
+    }
+  }
+
+  .burgerIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    nav ul {
+      top: 54px;
+      width: 100%;
+      right: -105%;
+      display: flex;
+      position: fixed;
+      padding: 12px 0;
+      align-items: start;
+      transition: 0.3s ease;
+      flex-direction: column;
+      justify-content: start;
+      background-color: white;
+      height: calc(100% - 54px);
+      box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1), inset 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+      li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        a {
+          width: 100%;
+          display: flex;
+          padding: 20px 15px 16px;
+        }
+      }
+
+      &.active {
+        right: 0;
+      }
+    }
+
+    .burgerIcon {
+      display: flex;
     }
   }
 }
