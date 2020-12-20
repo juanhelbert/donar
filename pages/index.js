@@ -19,7 +19,7 @@ export default function Home({ introduction }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const introduction = (await fetchEntries('introduction'))?.[0]?.fields || null
 
   return {
