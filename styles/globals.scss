@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   font-family: $default_font;
 }
 
@@ -35,25 +36,50 @@ section {
 }
 
 button {
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
 
 .container {
   width: 100%;
   display: flex;
   margin: 0 auto;
+  flex-wrap: wrap;
   padding: 0 15px;
   max-width: 1200px;
 }
 
 .cocogoose {
-  font-family: Cocogoose;
+  font-size: 0.9em;
   font-weight: normal;
   letter-spacing: 0.8px;
-  font-size: 0.9em;
+  font-family: Cocogoose;
 
   &.bold {
     font-weight: bold;
   }
+
+  &.gray {
+    color: $gray;
+  }
+
+  &.red {
+    color: $light_red;
+  }
+
+  &.dark-red {
+    color: $dark_red;
+  }
+}
+
+.title {
+  width: 100%;
+  margin: 48px 0 12px;
+  text-align: center;
+  font-size: calc(1em + 1vw);
+  line-height: calc(1em + 1vh);
+}
+
+.smt {
+  scroll-margin-top: 70px;
 }

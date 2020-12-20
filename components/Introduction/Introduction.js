@@ -6,7 +6,7 @@ export const Introduction = ({ data }) => {
   return <section className={styles.introduction}>
     <div>
       <h1 className='cocogoose bold'>{title}</h1>
-      <p className='cocogoose'>{subtitle}</p>
+      <p className='cocogoose gray'>{subtitle}</p>
     </div>
     <div>
       {donation}

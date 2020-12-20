@@ -1,0 +1,46 @@
+.HowItWorks {
+  article {
+    display: flex;
+    padding: 48px 0;
+    align-items: center;
+    justify-content: space-evenly;
+
+    figure {
+      img {
+        max-width: clamp(150px, 40vw, 190px);
+        filter: drop-shadow(0 30px 45px rgba(0, 0, 0, 0.25));
+      }
+    }
+
+    & > div {
+      width: 40%;
+    }
+
+    h3 {
+      margin-bottom: 12px;
+      font-size: calc(1em + 0.2vw);
+    }
+
+    p {
+      letter-spacing: 1px;
+      line-height: calc(1em + 0.6vh);
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .HowItWorks {
+    article {
+      flex-wrap: wrap;
+
+      & > div {
+        width: 100%;
+        margin-top: 24px;
+      }
+    }
+  }
+}

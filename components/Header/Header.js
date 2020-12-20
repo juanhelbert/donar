@@ -23,7 +23,7 @@ export const Header = () => {
 
   return <header className={styles.header}>
     <nav className='container'>
-      <Image src="/Donar.svg" width="110" height="30" alt="Profile Picture" />
+      <Image src="/Donar.svg" width="110" height="30" alt="Donar logo" />
       <button className={styles.burgerIcon} onClick={() => setShow(!show)}>
         <Menu size='20' />
       </button>
