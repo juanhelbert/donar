@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-size: calc(1em + 1vw);
+    line-height: calc(1em + 1vh);
+  }
+
+  p {
+    color: $gray;
+    margin-top: 0.5em;
+    font-size: calc(1em + 0.1vw);
+    line-height: calc(1em + 1vh);
+  }
+}
+
+@media (max-width: 991px) {
+  .introduction {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+      width: 100%;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}
